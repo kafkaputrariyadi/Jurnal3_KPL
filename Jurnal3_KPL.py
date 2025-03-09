@@ -26,7 +26,8 @@ class Kalkulator:
                 tk.Button(root, text=text, width=5, height=2, font=('Arial', 20), 
                           command=lambda t=text: self.masukkan_angka(t)).grid(row=row, column=col)
     
-    def masukkan_angka(self, angka):
+    def masukkan_angka(self, angka):# Ini adalah update terbaru untuk kalkulator
+
         self.ekspresi += angka
         self.layar.delete(0, tk.END)
         self.layar.insert(tk.END, self.ekspresi)
